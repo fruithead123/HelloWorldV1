@@ -1,0 +1,24 @@
+Attacks
+
+1-->  shoot in a circle [x,y,num,img,speed]  
+	args--> [1,num,speed,angleOffsetOriginal,angOffsetIncrement]
+
+2--> shoot at player [x,y,num,img,speed,angDispalcement]  
+	args--> [2,num,speed,angDisplacement]
+
+3--> burst [x,y,numPerCircle,burstNum,currentBurstCount,burstDelay,delay,speed,angleShift,img]
+     args--> [3,numPercircle,burstNum,currentBurstCount,burstDelay,speed,angleShift]
+
+4--> split [x,y,img,speed,splitDelay,ang1,ang2,size] 
+	args--> [4,speed,splitDelay,ang1,ang2,size] (0<size<9)
+
+5--> offset circle around circle args-->[5,<circle args>, distance]
+
+6--> offsetBurst in circle args--> [6,<burstArgs>,num,distance]
+
+Movement
+1--> axis movement (axis,speed,direction) 
+	args-->[1,speed,direction)
+	#input i[0] for x movement and i[1] for y movement
+2--> home to player (x,y,speed)
+	args-->[2,speed]
